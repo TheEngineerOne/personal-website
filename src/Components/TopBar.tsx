@@ -10,7 +10,7 @@ const navigation = [
   { name: 'Calendar', href: '#', current: false },
 ]
 
-export function setNavState(state){
+export function setNavState(state:string){
   navigation.forEach(el => {
     if(el.name === state){
       el.current = true;
@@ -20,7 +20,7 @@ export function setNavState(state){
   })
 } 
 
-function classNames(...classes) {
+function classNames(...classes:(string | false | null | undefined)[]) {
   return classes.filter(Boolean).join(' ')
 }
 

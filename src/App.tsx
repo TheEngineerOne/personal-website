@@ -1,7 +1,7 @@
 'use client';
 
 import './App.css'
-import {TopBar,setNavState} from './Components/TopBar.jsx'
+import {TopBar} from './Components/TopBar.tsx'
 function App() {
   return (
     <>
