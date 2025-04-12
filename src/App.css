@@ -1,6 +1,6 @@
 #root {
   margin: 0 auto;
-  padding: 2rem;
+  padding: 2rem 2rem 0 2rem;
   width:100%;
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
@@ -12,5 +12,11 @@ body {
   background:
     linear-gradient(0deg, rgba(32, 32, 64), rgba(0, 0, 0, 0) 70.71%),
     linear-gradient(130deg, rgba(32, 32, 32), rgba(0, 0, 0, 0) 70.71%);
+}
+
+@media (max-width: 640px) {
+  #root {
+    padding: 0; /* Remove all padding on phone screens */
+  }
 }
 

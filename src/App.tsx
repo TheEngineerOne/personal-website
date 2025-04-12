@@ -1,7 +1,7 @@
 'use client';
 
 import './App.css'
-import {TopBar} from './Components/TopBar'
+import {TopBar} from './Components/SimpleTopBar'
 import {FullScreenComponent} from './Components/FullScreenComponent'
 import {Paragraph} from './Components/Paragraph'
 
