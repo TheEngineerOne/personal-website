@@ -2,7 +2,6 @@
 
 import { Disclosure, DisclosureButton, DisclosurePanel} from '@headlessui/react'
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
-import { Logo } from '../../public/e-logo.svg'};
 
 const navigation = [
   { name: 'Dashboard', href: '#', current: true },
@@ -43,7 +42,7 @@ export function TopBar() {
             <div className="flex shrink-0 items-center">
               <img
                 alt="Your Company"
-                src={logo}
+                src="/e-logo.svg"
                 className="h-8 w-auto"
               />
             </div>

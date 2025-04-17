@@ -42,7 +42,7 @@ export function TopBar() {
             <div className="flex shrink-0 items-center">
               <img
                 alt="Your Company"
-                src="https://tailwindcss.com/plus-assets/img/logos/mark.svg?color=indigo&shade=500"
+                src="/e-logo.svg"
                 className="h-8 w-auto"
               />
             </div>
@@ -68,12 +68,12 @@ export function TopBar() {
             <button
               type="button"
               className="relative rounded-full bg-gray-800 p-1 text-gray-400 hover:text-gray-50 focus:ring-2 focus:ring-gray-100 focus:ring-offset-2 focus:ring-offset-gray-800 focus:outline-hidden"
-            >
+            > 
               <span className="absolute -inset-1.5" />
               <span className="sr-only">View notifications</span>
               <BellIcon aria-hidden="true" className="size-6" />
             </button>
-
+ 
             {/* Profile dropdown */}
             <Menu as="div" className="relative ml-3">
               <div> {/* Profile button */}
