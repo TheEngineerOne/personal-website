@@ -86,10 +86,9 @@ export function TopBar({ navigation, setNavigation }: TopBarProps) {
       <DisclosurePanel className="sm:hidden">
         <div className="space-y-1 px-2 pt-2 pb-3">
           {navigation.map((item) => (
+            <Link to={item.href}>
             <DisclosureButton
               key={item.name}
-              as="a"
-              href={item.href}
               onClick={() => handleNavClick(item.name)}
               aria-current={item.current ? 'page' : undefined}
               className={classNames(
@@ -99,6 +98,7 @@ export function TopBar({ navigation, setNavigation }: TopBarProps) {
             >
               {item.name}
             </DisclosureButton>
+            </Link>
           ))}
         </div>
       </DisclosurePanel>
