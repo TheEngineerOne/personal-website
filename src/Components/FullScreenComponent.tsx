@@ -14,4 +14,4 @@ export const FullScreenComponent: React.FC<FullScreenProps> = ({ children }) => 
   );
 };
 
-
+export default FullScreenComponent
