@@ -10,6 +10,7 @@ function App() {
     <>
       <Router>
         <Routes>
+          <Route path="/" element={<About/>}/>
           <Route path="/about" element={<About/>}/>
           <Route path="*" element={<NotFound/>}/>
         </Routes>
