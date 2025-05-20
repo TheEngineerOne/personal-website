@@ -4,10 +4,9 @@ import { Disclosure, DisclosureButton, DisclosurePanel} from '@headlessui/react'
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
 
 const navigation = [
-  { name: 'Dashboard', href: '#', current: true },
-  { name: 'Team', href: '#', current: false },
+  { name: 'About', href: '#', current: true },
   { name: 'Projects', href: '#', current: false },
-  { name: 'Calendar', href: '#', current: false },
+  { name: 'Experiences', href: '#', current: false },
 ]
 
 export function setNavState(state:string){
