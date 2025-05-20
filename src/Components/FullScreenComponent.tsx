@@ -1,7 +1,7 @@
 import React from "react";
 
 type FullScreenProps = {
-  children: React.ReactNode;
+  children: React.ReactNode | null;
 };
 
 export const FullScreenComponent: React.FC<FullScreenProps> = ({ children }) => {
