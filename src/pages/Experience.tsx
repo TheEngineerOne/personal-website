@@ -1,16 +1,17 @@
-import React from 'react';
+import React from "react";
 import FullScreenComponent from '../Components/FullScreenComponent'
 import TopBar from '../Components/SimpleTopBar'
 
-const About : React.FC = () => {
+const Experience : React.FC = () => {
   return (
     <>
       <TopBar/>
       <FullScreenComponent>
-        <h1>Test About</h1>
+        <h1>Test Experience</h1>
       </FullScreenComponent>
     </>
   )
 }
 
-export default About;
+export default Experience;
+
