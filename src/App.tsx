@@ -8,8 +8,8 @@ import {useState} from 'react'
 import TopBar from './Components/SimpleTopBar.tsx'
 
 const initialNav = [
-  { name: 'About', href: '/about', current: false },
-  { name: 'Projects', href: '/projects', current: false },
+  { name: 'A propos de moi', href: '/about', current: false },
+  { name: 'Projets', href: '/projects', current: false },
   { name: 'Experiences', href: '/experiences', current: false },
 ]
 

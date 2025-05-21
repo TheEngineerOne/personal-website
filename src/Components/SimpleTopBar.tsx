@@ -25,15 +25,16 @@ export function TopBar({ navigation, setNavigation }: TopBarProps) {
   const setNavState = (navs: typeof navigation, state: string) => {
     return navs.map(nav => ({
       ...nav,
-      current: nav.name === state,
+      current: nav.href === state,
     }))
   }
 
   // Update navigation state when location changes
   React.useEffect(() => {
-    const currentPage = location.pathname.split('/')[1] || 'about'
-    setNavigation(prev => setNavState(prev, currentPage.charAt(0).toUpperCase() + currentPage.slice(1)))
-  }, [location.pathname, setNavigation])
+  const path = location.pathname === '/' ? '/about' : location.pathname
+  setNavigation(prev => setNavState(prev, path))
+}, [location.pathname, setNavigation])
+
 
   const handleNavClick = (clickedName: string) => {
     setNavigation(
