@@ -6,6 +6,7 @@ import Projects from './pages/Projects.tsx'
 import Experience from './pages/Experience.tsx'
 import {useState} from 'react'
 import TopBar from './Components/SimpleTopBar.tsx'
+import FullScreenComponent from './Components/FullScreenComponent.tsx'
 
 const initialNav = [
   { name: 'A propos de moi', href: '/about', current: false },
@@ -18,13 +19,15 @@ function App() {
   return (
     <Router>
       <TopBar navigation={navigation} setNavigation={setNavigation} />
-      <Routes>
-        <Route path="/" element={<About />} />
-        <Route path="/about" element={<About />} />
-        <Route path="/projects" element={<Projects />} />
-        <Route path="/experiences" element={<Experience />} />
-        <Route path="*" element={<NotFound />} />
-      </Routes>
+      <FullScreenComponent>
+        <Routes>
+          <Route path="/" element={<About />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/projects" element={<Projects />} />
+          <Route path="/experiences" element={<Experience />} />
+          <Route path="*" element={<NotFound />} />
+        </Routes>
+      </FullScreenComponent>
     </Router>
   )
 }
