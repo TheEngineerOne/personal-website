@@ -13,9 +13,34 @@ body {
     linear-gradient(130deg, var(--color-gray-900), rgba(0, 0, 0, 0) 70.71%);
 }
 
+/* Basic styling for paragraphs */
+h1 {
+  font-size: 1.5em;
+}
+
+
+p {
+  font-size: 1em;
+}
+
+/* Basic styling for list items */
+li {
+  font-size: 1em;
+}
+
+ul {
+  column-count:2;
+  list-style-type: disc; /* bullet */
+  padding-left: 1.5em;   /* space for bullet */
+}
+
 @media (max-width: 640px) {
   #root {
     padding: 0; /* Remove all padding on phone screens */
+  }
+
+  ul {
+    column-count:1;
   }
 }
 
