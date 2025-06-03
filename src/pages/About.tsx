@@ -6,7 +6,7 @@ const About : React.FC = () => {
       <p>
         Je suis VERBRUGGEN Lucas, un développeur backend, frontend et fullstack
       </p>
-      <h1>Techonologies maitr&icirc;s&eacute;es</h1>
+      <h1>Technologies maitr&icirc;s&eacute;es</h1>
       <div className="items-center">
         <div className="flex items-center overflow-auto space-x-5">
           <a href="https://fr.wikipedia.org/wiki/TypeScript">
