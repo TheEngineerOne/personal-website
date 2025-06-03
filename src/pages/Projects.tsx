@@ -1,14 +1,14 @@
 import React from "react";
 import ProjectCard from "../Components/ProjectCard.tsx";
-
+import tanquestImage from "../assets/tanquest.png";
 const Projects : React.FC = () => {
   return (
     <>
         <ProjectCard
-        href=""
-        altText="Lorem Ipsum"
-        imageUrl="https://picsum.photos/id/237/200/300"
-        text="Lorem Ipsum"
+        href="https://github.com/marcroussel/TanQuest"
+        altText="TanQuest Image"
+        imageUrl={tanquestImage}
+        text="TanQuest"
         />
     </>
   )
