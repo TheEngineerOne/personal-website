@@ -14,7 +14,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
   text
 }) => {
   return (
-    <div className='flex flex-col items-center gap-2 w-full p-2'>
+    <div className='flex flex-col items-center gap-2 w-full p-5'>
       <a href={href} target="_blank" rel="noopener noreferrer" className="w-full transiion-transform hover:scale-105">
         <img 
           src={imageUrl} 
