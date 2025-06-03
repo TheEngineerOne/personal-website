@@ -14,12 +14,12 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
   text
 }) => {
   return (
-    <div className='flex flex-col items-center gap-2 w-full py-2'>
-      <a href={href} target="_blank" rel="noopener noreferrer">
+    <div className='flex flex-col items-center gap-2 w-full p-2'>
+      <a href={href} target="_blank" rel="noopener noreferrer" className="w-full">
         <img 
           src={imageUrl} 
           alt={altText} 
-          className="h-[25%] mx-auto center rounded shadow-md transition-transform hover:scale-105"
+          className="w-full mx-auto center rounded shadow-md transition-transform hover:scale-105"
         />
         <div className="mx-auto text-center text-xl">
           {text}
