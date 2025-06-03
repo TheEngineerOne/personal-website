@@ -11,7 +11,7 @@ const Projects : React.FC = () => {
         imageUrl={tanquestImage}
         text="TanQuest"
         />
-        </div>
+      </div>
     </>
   )
 }
