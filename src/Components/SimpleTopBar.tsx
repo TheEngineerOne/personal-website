@@ -1,5 +1,5 @@
 import React from 'react'
-import { Disclosure, DisclosureButton, DisclosurePanel } from '@headlessui/react'
+import { Disclosure, DisclosureButton, DisclosurePanel, Transition} from '@headlessui/react'
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
 import { useLocation, Link } from 'react-router-dom'
 
@@ -84,6 +84,14 @@ export function TopBar({ navigation, setNavigation }: TopBarProps) {
           </div>
         </div>
       </div>
+      <Transition
+        enter="transition-max-height duration-500 ease-in-out"
+        enterFrom="max-h-0"
+        enterTo="max-h-[500px]"
+        leave="transition-max-height duration-400 ease-in-out"
+        leaveFrom="max-h-[500px]"
+        leaveTo="max-h-0"
+      >
       <DisclosurePanel className="sm:hidden">
         <div className="space-y-1 px-2 pt-2 pb-3">
           {navigation.map((item) => (
@@ -103,6 +111,7 @@ export function TopBar({ navigation, setNavigation }: TopBarProps) {
           ))}
         </div>
       </DisclosurePanel>
+      </Transition>
     </Disclosure>
   )
 }
