@@ -14,7 +14,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
   text
 }) => {
   return (
-    <div className='flex flex-col items-center gap-2 w-full'>
+    <div className='flex flex-col items-center gap-2 w-full py-2'>
       <a href={href} target="_blank" rel="noopener noreferrer">
         <img 
           src={imageUrl} 
