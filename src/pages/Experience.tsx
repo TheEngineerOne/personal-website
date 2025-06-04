@@ -8,6 +8,7 @@ const Experience : React.FC = () => {
         <ProjectCard
           href="https://www.lisn.upsaclay.fr/"
           imageUrl="https://www.lisn.upsaclay.fr/app/uploads/2022/01/logo.svg"
+          altText=""
           text="Stagiaire Développeur au LISN (Janvier 2025 - Mai 2025)"
         />
       </div> 
@@ -15,6 +16,7 @@ const Experience : React.FC = () => {
         <ProjectCard
           href="https://citypassenger.com/"
           imageUrl="https://citypassenger.com/wp-content/uploads/2022/06/Logo_CP_72dpi.jpg"
+          altText=""
           text="Stagiaire Concepteur de test (Avril 2024 - Juin 2024)"
         />
       </div> 
