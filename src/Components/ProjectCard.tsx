@@ -20,7 +20,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
           <img 
             src={imageUrl} 
             alt={altText} 
-            className="w-full mx-auto center rounded shadow-md"
+            className="max-h-[50%] w-full mx-auto center rounded shadow-md"
           />
           <div className="mx-auto text-center text-xl">
             {text}
