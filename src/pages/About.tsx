@@ -2,6 +2,7 @@ import React from 'react';
 const About : React.FC = () => {
   return (
     <>
+      <div>
       <h1>&#xC0; propos de moi</h1>
       <p>
         Je suis VERBRUGGEN Lucas, un développeur backend, frontend et fullstack
@@ -155,6 +156,7 @@ const About : React.FC = () => {
           </li>
         </ul>
       </p>
+      </div>
     </>
   )
 }
