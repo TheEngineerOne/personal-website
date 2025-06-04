@@ -11,6 +11,14 @@ const Experience : React.FC = () => {
           text="Stagiaire Développeur au LISN (Janvier 2025 - Mai 2025)"
         />
       </div> 
+      <div>
+        <ProjectCard
+          href="https://citypassenger.com/"
+          imageUrl="https://citypassenger.com/wp-content/uploads/2022/06/Logo_CP_72dpi.jpg"
+          text="Stagiaire Concepteur de test (Avril 2024 - Juin 2024)"
+        />
+      </div> 
+
     </>
   )
 }
