@@ -5,7 +5,7 @@ const About : React.FC = () => {
       <div>
       <h1>&#xC0; propos de moi</h1>
       <p>
-        Je suis VERBRUGGEN Lucas, un développeur backend, frontend et fullstack
+        Je suis VERBRUGGEN Lucas, un développeur backend, frontend et fullstack qui apprécie principalement le développement informatique et le jeu vid&eacute;o
       </p>
       <h1>Technologies maitr&icirc;s&eacute;es</h1>
       <div className="items-center">
@@ -156,6 +156,14 @@ const About : React.FC = () => {
           </li>
         </ul>
       </p>
+      </div>
+      <div>
+        <h1>Mon parcours scolaire</h1>
+        <div>
+          <ul>
+            <li>2021-2025 : IUT d'Orsay</li>
+          </ul>
+        </div>
       </div>
     </>
   )
